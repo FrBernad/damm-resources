@@ -1,5 +1,5 @@
-import 'package:ITBA_DAMM/go_router/models/recipe.dart';
 import 'package:flutter/material.dart';
+import 'package:itba_damm/beamer/models/recipe.dart';
 
 /// A page that displays the details of a recipe with the given [recipe].
 class RecipeDetailsPage extends StatelessWidget {

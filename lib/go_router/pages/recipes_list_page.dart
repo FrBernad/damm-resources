@@ -1,7 +1,7 @@
-import 'package:ITBA_DAMM/go_router/pages/recipe_details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../beamer/pages/recipe_details_page.dart';
 import '../models/recipe.dart';
 
 class RecipesListPage extends StatelessWidget {
@@ -37,6 +37,6 @@ class RecipesListPage extends StatelessWidget {
   }
 
   void onRecipePressed(BuildContext context, Recipe recipe) {
-    context.push(RecipeDetailsPage.routeFromId(recipe.id));
+    context.go(RecipeDetailsPage.routeFromId(recipe.id));
   }
 }

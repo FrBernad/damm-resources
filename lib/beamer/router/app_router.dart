@@ -1,9 +1,7 @@
-import 'package:ITBA_DAMM/beamer/pages/recipes_list_page.dart';
 import 'package:beamer/beamer.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import '../../go_router/pages/recipe_details_page.dart';
+import 'package:itba_damm/beamer/pages/recipe_details_page.dart';
+import 'package:itba_damm/beamer/pages/recipes_list_page.dart';
 
 /// Contains all of the app routes configurations
 final routerDelegate = BeamerDelegate(

@@ -1,6 +1,6 @@
-import 'package:ITBA_DAMM/go_router/pages/recipe_details_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
+import 'package:itba_damm/go_router/pages/recipe_details_page.dart';
 
 import '../pages/recipes_list_page.dart';
 
@@ -12,14 +12,16 @@ final router = GoRouter(
     GoRoute(
       path: RecipesListPage.route,
       builder: (context, state) => const RecipesListPage(),
-    ),
-    GoRoute(
-      path: RecipeDetailsPage.route,
-      builder: (context, state) {
-        return RecipeDetailsPage(
-          recipeId: int.parse(state.pathParameters['recipeId']!),
-        );
-      },
+      routes: [
+        GoRoute(
+          path: RecipeDetailsPage.route,
+          builder: (context, state) {
+            return RecipeDetailsPage(
+              recipeId: int.parse(state.pathParameters['recipeId']!),
+            );
+          },
+        ),
+      ],
     ),
   ],
 );

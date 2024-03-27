@@ -1,7 +1,7 @@
-import 'package:ITBA_DAMM/go_router/pages/recipe_details_page.dart';
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 
+import '../../go_router/pages/recipe_details_page.dart';
 import '../models/recipe.dart';
 
 class RecipesListPage extends StatelessWidget {

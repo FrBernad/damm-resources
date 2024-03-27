@@ -1,5 +1,5 @@
-import 'package:ITBA_DAMM/go_router/router/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:itba_damm/go_router/router/app_router.dart';
 
 void main() {
   runApp(const MyApp());
