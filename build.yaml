@@ -1,0 +1,16 @@
+# https://stackoverflow.com/questions/68190081/is-there-a-way-to-put-the-generated-files-in-a-separate-folder-in-flutter
+# https://stackoverflow.com/questions/74889545/is-there-a-build-extensions-rule-in-build-yaml-to-output-all-generated-flutter-m
+targets:
+  $default:
+    builders:
+      source_gen|combining_builder:
+        generate_for:
+          - lib/**.dart
+        options:
+          build_extensions:
+            '^lib/{{path}}/{{file}}.dart': 'lib/{{path}}/generated/{{file}}.g.dart'
+      freezed:
+        options:
+          build_extensions:
+            '^lib/{{path}}/{{file}}.dart': 'lib/{{path}}/generated/{{file}}.freezed.dart'
+

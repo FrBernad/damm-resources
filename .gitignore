@@ -41,3 +41,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Generated files
+lib/**/generated
+
+# Flutter version manager
+.fvm/flutter_sdk
+
+# Enviroment variables
+**/.env**
+!**/.env.dist
