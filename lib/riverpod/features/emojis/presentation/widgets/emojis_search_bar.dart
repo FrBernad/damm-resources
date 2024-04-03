@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../../config/ui/ui_colors.dart';
 
-class EmojisSearchBar extends HookConsumerWidget {
+class EmojisSearchBar extends HookWidget {
   const EmojisSearchBar({
     super.key,
     required this.onChanged,
@@ -13,7 +12,7 @@ class EmojisSearchBar extends HookConsumerWidget {
   final void Function(String) onChanged;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final focusNode = useFocusNode();
     useListenable(focusNode);
 
