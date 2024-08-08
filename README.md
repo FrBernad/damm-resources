@@ -15,6 +15,6 @@ Access the `/lib` folder where you'll find the examples seen in each class.
 * [dart_examples](/lib/dart_examples) -> intro to dart
 * [discard_or_update](/lib/discard_or_update.dart) -> element and render tree
 * [keys](/lib/keys.dart) -> widget keys
-* [riverpod](https://github.com/FrBernad) -> state management
-* [beemer](https://github.com/FrBernad) -> routing
-* [go_routing](https://github.com/FrBernad) -> routing
+* [riverpod](/lib/riverpod) -> state management
+* [beamer](/lib/beamer) -> routing & deep linking
+* [go_router](/lib/go_router) -> routing & deep linking
