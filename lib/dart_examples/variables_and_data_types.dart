@@ -34,6 +34,7 @@ void main() {
   print('Dynamic variable: $dynamicVar');
 
   // final: Runtime constant, value must be set when declared and cannot be changed
+  // ignore: prefer_const_declarations
   final String finalVar = 'This cannot be changed';
   print('Final variable: $finalVar');
 

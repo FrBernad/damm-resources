@@ -47,8 +47,9 @@ class _DiscardOrUpdateState extends State<DiscardOrUpdate> {
     return Scaffold(
       body: Center(
         child: _isLoading
-            ? CircularProgressIndicator()
-            : CounterWidget(  // ----> CounterElement
+            ? const CircularProgressIndicator()
+            : CounterWidget(
+                // ----> CounterElement
                 isLoading: _isLoading,
                 counter: _counter,
               ),
@@ -93,5 +94,4 @@ class CounterWidget extends StatelessWidget {
     debugPrint('createElement CounterWidget');
     return super.createElement();
   }
-
 }

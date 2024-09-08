@@ -66,7 +66,7 @@ void main() {
   print('Is adult: $isAdult');
 
   // Fat arrow syntax for one-line functions
-  var multiply = (int a, int b) => a * b;
+  multiply(int a, int b) => a * b;
   print('3 * 4 = ${multiply(3, 4)}');
 
   // Named parameters with default values
@@ -86,8 +86,8 @@ void main() {
 // Extension methods
 extension StringExtension on String {
   String capitalizeFirstLetter() {
-    if (this.isEmpty) return this;
-    return this[0].toUpperCase() + this.substring(1);
+    if (isEmpty) return this;
+    return this[0].toUpperCase() + substring(1);
   }
 }
 
