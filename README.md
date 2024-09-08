@@ -1,6 +1,7 @@
 # ITBA DAMM Class Resources
 
-Welcome to DAMM 2024!
+Welcome to DAMM 2024! This repo contains the resources used during classes with the purpose of
+helping you understand the concepts and technologies we're working with.
 
 ## Authors
 
@@ -18,3 +19,14 @@ Access the `/lib` folder where you'll find the examples seen in each class.
 * [riverpod](/lib/riverpod) -> state management
 * [beamer](/lib/beamer) -> routing & deep linking
 * [go_router](/lib/go_router) -> routing & deep linking
+
+## Running the repo
+
+On a separate terminal, run the command necessary for the codegen to work with the following
+command:
+
+```bash
+dart run build_runner watch
+```
+
+Then, run one of the `app.dart` files in the `/lib` folder to see the examples in action.
