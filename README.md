@@ -19,6 +19,7 @@ Access the `/lib` folder where you'll find the examples seen in each class.
 * [riverpod](/lib/riverpod) -> state management
 * [beamer](/lib/beamer) -> routing & deep linking
 * [go_router](/lib/go_router) -> routing & deep linking
+* [form builder](/lib/form_builder.dart) -> user input
 
 ## Running the repo
 
