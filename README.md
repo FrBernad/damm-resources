@@ -30,4 +30,10 @@ command:
 dart run build_runner watch
 ```
 
+Also run the following command to enable Git hooks in order to push files:
+
+```bash
+dart run husky install
+```
+
 Then, run one of the `app.dart` files in the `/lib` folder to see the examples in action.

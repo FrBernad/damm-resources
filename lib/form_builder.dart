@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
@@ -32,6 +34,7 @@ class RegistrationFormState extends State<RegistrationForm> {
   void _onSubmit() {
     if (_formKey.currentState!.saveAndValidate()) {
       // In a real app, you would handle the form submission here
+      //
       print(_formKey.currentState!.value);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Registration Successful!')),
