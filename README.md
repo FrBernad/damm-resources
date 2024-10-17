@@ -46,4 +46,4 @@ To run the tests for the first time, execute the following command:
 flutter test --update-goldens
 ```
 
-The following times, you can run the tests with the --update-goldens flag.
+If no changes were made to the files in `/golden`, you can run the tests with the `--update-goldens` flag.
