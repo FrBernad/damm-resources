@@ -26,6 +26,8 @@ dependencies:
   hooks_riverpod: ^2.5.4
   form_builder_validators: ^11.0.0
   flutter_form_builder: ^9.5.0
+  fake_cloud_firestore: ^3.0.3
+  cloud_firestore: ^5.4.4
 
 dev_dependencies:
   flutter_test:

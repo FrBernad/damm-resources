@@ -37,3 +37,13 @@ dart run husky install
 ```
 
 Then, run one of the `app.dart` files in the `/lib` folder to see the examples in action.
+
+## Tests
+
+To run the tests for the first time, execute the following command:
+
+```bash
+flutter test --update-goldens
+```
+
+The following times, you can run the tests with the --update-goldens flag.
