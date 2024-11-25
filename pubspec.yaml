@@ -21,7 +21,7 @@ dependencies:
   dio: ^5.7.0
   flutter_flavorizr: ^2.2.3
   equatable: ^2.0.5
-  fpdart: ^1.1.0
+  fpdart: ^1.1.1
   flutter_hooks: ^0.20.5
   hooks_riverpod: ^2.5.4
   form_builder_validators: ^11.0.0
