@@ -23,7 +23,7 @@ dependencies:
   equatable: ^2.0.5
   fpdart: ^1.1.0
   flutter_hooks: ^0.20.5
-  hooks_riverpod: ^2.5.4
+  hooks_riverpod: ^2.6.1
   form_builder_validators: ^11.0.0
   flutter_form_builder: ^9.5.0
   fake_cloud_firestore: ^3.0.3
