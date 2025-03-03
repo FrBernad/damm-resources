@@ -27,7 +27,7 @@ dependencies:
   form_builder_validators: ^11.1.2
   flutter_form_builder: ^9.7.0
   fake_cloud_firestore: ^3.1.0
-  cloud_firestore: ^5.6.4
+  cloud_firestore: ^5.6.5
 
 dev_dependencies:
   flutter_test:
