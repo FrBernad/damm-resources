@@ -50,7 +50,6 @@ class _DiscardOrUpdateState extends State<DiscardOrUpdate> {
             ? const CircularProgressIndicator()
             : CounterWidget(
                 // ----> CounterElement
-                isLoading: _isLoading,
                 counter: _counter,
               ),
       ),
@@ -74,24 +73,23 @@ class _DiscardOrUpdateState extends State<DiscardOrUpdate> {
 }
 
 class CounterWidget extends StatelessWidget {
-  final bool isLoading;
   final int counter;
 
   const CounterWidget({
     super.key,
-    required this.isLoading,
     required this.counter,
   });
-
-  @override
-  Widget build(BuildContext context) {
-    debugPrint('rebuild CounterWidget');
-    return isLoading ? const CircularProgressIndicator() : Text('$counter');
-  }
 
   @override
   StatelessElement createElement() {
     debugPrint('createElement CounterWidget');
     return super.createElement();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    debugPrint('rebuild CounterWidget');
+    return Text('$counter');
+  }
+
 }
