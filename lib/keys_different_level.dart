@@ -23,16 +23,14 @@ class _MyHomePageState extends State<MyHomePage> {
       padding: EdgeInsets.all(8.0),
       key: ValueKey(1),
       child: Tile(
-        color: Colors.blue,
-        name: 'blue Tile',
+        name: 'Tile 1',
       ),
     ),
     const Padding(
       padding: EdgeInsets.all(8.0),
       key: ValueKey(2),
       child: Tile(
-        color: Colors.red,
-        name: 'red Tile',
+        name: 'Tile 2',
       ),
     ),
   ];
@@ -53,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void swapTwoTileWidget() {
+    debugPrint("Swaping!");
     setState(() {
       listTile.insert(1, listTile.removeAt(0));
     });
@@ -60,11 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class Tile extends StatefulWidget {
-  final Color color;
   final String name;
 
   const Tile({
-    required this.color,
     required this.name,
     super.key,
   });
@@ -74,7 +71,7 @@ class Tile extends StatefulWidget {
 
   @override
   StatefulElement createElement() {
-    debugPrint('rebuild tile $name');
+    debugPrint('create tile $name');
     return super.createElement();
   }
 }
@@ -100,6 +97,8 @@ class _TileState extends State<Tile> {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('rebuild tile ${widget.name} color $_color');
+
     return Container(
       color: _color,
       width: 100,
@@ -107,3 +106,5 @@ class _TileState extends State<Tile> {
     );
   }
 }
+
+// Fix with global key
