@@ -46,7 +46,6 @@ app.*.map.json
 lib/**/generated
 
 # Flutter version manager
-.fvm/flutter_sdk
 
 # Enviroment variables
 **/.env**
@@ -55,3 +54,6 @@ lib/**/generated
 # Golden tests
 
 test/golden/*.png
+
+# FVM Version Cache
+.fvm/
