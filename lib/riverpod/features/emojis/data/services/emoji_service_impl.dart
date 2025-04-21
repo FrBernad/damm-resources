@@ -1,14 +1,14 @@
 import 'package:fpdart/fpdart.dart';
+import 'package:itba_damm/riverpod/features/emojis/domain/services/emoji_service.dart';
 
 import '../../domain/models/emoji_model.dart';
-import '../../domain/repositories/emoji_repository.dart';
 import '../datasources/remote/emoji_remote_data_source.dart';
 import '../entities/emoji_entity.dart';
 
-class EmojiRepositoryImpl implements EmojiRepository {
+class EmojiServiceImpl implements EmojiService {
   final EmojiRemoteDataSource emojisRemoteDatasource;
 
-  EmojiRepositoryImpl({
+  EmojiServiceImpl({
     required this.emojisRemoteDatasource,
   });
 

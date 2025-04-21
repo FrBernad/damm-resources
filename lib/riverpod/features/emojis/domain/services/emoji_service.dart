@@ -1,6 +1,6 @@
 import '../models/emoji_model.dart';
 
-abstract interface class EmojiRepository {
+abstract interface class EmojiService {
   Future<Emoji> getEmojiById({
     required String emojiId,
   });

@@ -37,9 +37,8 @@ class EmojisSearchController extends _$EmojisSearchController {
   Future<List<Emoji>> _getEmojis({
     required String searchTerm,
   }) async {
-    final emojis = await ref
-        .read(emojiRepositoryProvider)
-        .getEmojis(searchTerm: searchTerm);
+    final emojis =
+        await ref.read(emojiServiceProvider).getEmojis(searchTerm: searchTerm);
 
     return emojis;
   }

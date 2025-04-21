@@ -1,4 +1,5 @@
 import 'package:beamer/beamer.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:itba_damm/beamer/pages/recipe_details_page.dart';
 import 'package:itba_damm/beamer/pages/recipes_list_page.dart';
@@ -38,6 +39,7 @@ final routerDelegate2 = BeamerDelegate(
 
 final routerDelegate3 = BeamerDelegate(
   initialPath: RecipesListPage.route,
+  guards: [if (kDebugMode) loggerGuard],
   locationBuilder: (routeInformation, _) {
     if (routeInformation.uri.path.contains('recipes')) {
       return RecipesLocation(routeInformation: routeInformation);
@@ -78,3 +80,12 @@ class RecipesLocation extends BeamLocation<BeamState> {
     return pages;
   }
 }
+
+final loggerGuard = BeamGuard(
+  pathPatterns: ['*'], // Apply to all routes
+  check: (context, location) {
+    // Log the navigation
+    debugPrint('Navigating to: ${location.state.routeInformation.uri}');
+    return true; // Always allow
+  },
+);

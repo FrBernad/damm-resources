@@ -1,10 +1,11 @@
 // Data
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:itba_damm/riverpod/features/emojis/domain/services/emoji_service.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../config/providers.dart';
 import 'data/datasources/remote/emoji_remote_data_source.dart';
-import 'data/repositories/emoji_repository_impl.dart';
-import 'domain/repositories/emoji_repository.dart';
+import 'data/services/emoji_service_impl.dart';
 
 part 'generated/providers.g.dart';
 
@@ -14,16 +15,16 @@ part 'generated/providers.g.dart';
 
 @Riverpod(keepAlive: true)
 EmojiRemoteDataSource emojiRemoteDataSource(
-  EmojiRemoteDataSourceRef ref,
+  Ref ref,
 ) =>
     EmojiRemoteDatasourceImpl(
       httpClient: ref.watch(dioProvider),
     );
 
 @Riverpod(keepAlive: true)
-EmojiRepository emojiRepository(
-  EmojiRepositoryRef ref,
+EmojiService emojiService(
+  Ref ref,
 ) =>
-    EmojiRepositoryImpl(
+    EmojiServiceImpl(
       emojisRemoteDatasource: ref.watch(emojiRemoteDataSourceProvider),
     );
