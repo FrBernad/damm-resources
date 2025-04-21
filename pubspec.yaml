@@ -19,7 +19,7 @@ dependencies:
   flutter_dotenv: ^5.2.1
   logger: ^2.5.0
   dio: ^5.8.0+1
-  flutter_flavorizr: ^2.3.0
+  flutter_flavorizr: ^2.4.0
   equatable: ^2.0.7
   fpdart: ^1.1.1
   flutter_hooks: ^0.21.2
@@ -27,7 +27,7 @@ dependencies:
   form_builder_validators: ^11.1.2
   flutter_form_builder: ^9.7.0
   fake_cloud_firestore: ^3.1.0
-  cloud_firestore: ^5.6.5
+  cloud_firestore: ^5.6.6
 
 dev_dependencies:
   flutter_test:
