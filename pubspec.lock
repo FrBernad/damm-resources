@@ -434,10 +434,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_flavorizr
-      sha256: "94ca0f0ef9dc27c61781b195de9adcb07211c4039d728469c0da786e9da6f31b"
+      sha256: "7ac1a53e95d36e96017bbf4aa94023dc652e455de3f0ce9c80e9eaa274c73e81"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.4.1"
   flutter_form_builder:
     dependency: "direct main"
     description:
