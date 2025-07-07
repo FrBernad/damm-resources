@@ -1,6 +1,6 @@
 # ITBA DAMM Class Resources
 
-Welcome to DAMM 2024! This repo contains the resources used during classes with the purpose of
+Welcome to DAMM 2025! This repo contains the resources used during classes with the purpose of
 helping you understand the concepts and technologies we're working with.
 
 ## Authors
@@ -11,7 +11,7 @@ helping you understand the concepts and technologies we're working with.
 
 ## How to use the repo
 
-Access the `/lib` folder where you'll find the examples seen in each class.
+Access the `/lib` folder where you'll find the examples seen in each class:
 
 * [dart_examples](/lib/dart_examples) -> intro to dart
 * [discard_or_update](/lib/discard_or_update.dart) -> element and render tree
